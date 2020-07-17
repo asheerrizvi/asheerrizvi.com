@@ -1,14 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Home = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const Home = () => {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout>
       <SEO title="Home" />
       <h1>Welcome to the home of Bilbo Baggins in the Shire!</h1>
     </Layout>
@@ -16,13 +12,3 @@ const Home = ({ data, location }) => {
 }
 
 export default Home
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

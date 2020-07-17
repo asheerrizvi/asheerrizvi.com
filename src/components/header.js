@@ -8,7 +8,7 @@ const Header = ({ title }) => {
     <React.Fragment>
       <nav className="flex items-center justify-between flex-no-wrap">
         <div className="flex items-center flex-shrink-0">
-          <h3>
+          <h3 className="font-sans">
             <Link to={`/`}>{title}</Link>
           </h3>
         </div>
