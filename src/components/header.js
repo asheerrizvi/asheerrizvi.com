@@ -6,21 +6,21 @@ const Header = ({ title }) => {
 
   header = (
     <React.Fragment>
-      <nav className="flex items-center justify-between flex-no-wrap">
+      <nav className="flex items-baseline justify-between flex-no-wrap">
         <div className="flex items-center flex-shrink-0">
-          <h3 className="font-light">
+          <h3 className="font-light text-3xl">
             <Link to={`/`}>{title}</Link>
           </h3>
         </div>
         <div>
           <Link
-            className="hover:bg-gray-200 text-xl hover:text-gray-600 py-2 px-4 rounded-l font-light"
+            className="text-2xl mr-3 font-light"
             to={`/blog`}
           >
             blog
           </Link>
           <Link
-            className="hover:bg-gray-200 text-xl hover:text-gray-600 py-2 px-4 rounded-l font-light"
+            className="text-2xl font-light"
             to={`/about`}
           >
             about
@@ -29,7 +29,7 @@ const Header = ({ title }) => {
       </nav>
     </React.Fragment>
   )
-  return <header className="mt-8 mb-16 py-6">{header}</header>
+  return <header className="my-8">{header}</header>
 }
 
 export default Header

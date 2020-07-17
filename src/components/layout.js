@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   )
   const title = data.site.siteMetadata.title
   return (
-    <div className="mx-auto px-40">
+    <div className="container mx-auto px-6 mb-8">
       <Header title={title} />
       <main>{children}</main>
     </div>

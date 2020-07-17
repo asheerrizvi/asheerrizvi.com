@@ -1,18 +1,6 @@
 /*! purgecss start ignore */
 @tailwind base;
 
-h1 {
-  @apply text-5xl;
-}
-
-h2 {
-  @apply text-4xl;
-}
-
-h3 {
-  @apply text-3xl;
-}
-
 a {
   @apply text-blue-600;
   @apply no-underline;
