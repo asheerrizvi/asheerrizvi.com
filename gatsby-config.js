@@ -5,15 +5,15 @@ const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
-    title: `asheerRizvi`,
+    title: `Asheer Rizvi`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Asheer Rizvi`,
+      summary: `Web developer in a love-hate relationship with JavaScript.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Personal Website and Blog.`,
+    siteUrl: `https://asheerrizvi.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `asheerrizvi`,
     },
   },
   plugins: [
