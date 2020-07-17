@@ -8,17 +8,23 @@ const Header = ({ title }) => {
     <React.Fragment>
       <nav className="flex items-center justify-between flex-no-wrap">
         <div className="flex items-center flex-shrink-0">
-          <h3 className="font-sans font-thin">
+          <h3 className="font-light">
             <Link to={`/`}>{title}</Link>
           </h3>
         </div>
         <div>
-          <button className="hover:bg-gray-200 hover:text-gray-900 text-gray-600 py-2 px-4 rounded-l">
-            <Link to={`/blog`}>Blog</Link>
-          </button>
-          <button className="hover:bg-gray-200 hover:text-gray-900 text-gray-600 py-2 px-4 rounded-l">
-            <Link to={`/about`}>About</Link>
-          </button>
+          <Link
+            className="hover:bg-gray-200 text-xl hover:text-gray-600 py-2 px-4 rounded-l font-light"
+            to={`/blog`}
+          >
+            blog
+          </Link>
+          <Link
+            className="hover:bg-gray-200 text-xl hover:text-gray-600 py-2 px-4 rounded-l font-light"
+            to={`/about`}
+          >
+            about
+          </Link>
         </div>
       </nav>
     </React.Fragment>
