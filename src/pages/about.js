@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <h2 className="mt-8 text-3xl text-gray-800">About</h2>
+      <h2 className="text-3xl text-gray-800">About</h2>
       <p className="mt-6 text-lg lg:text-xl text-gray-700">
         Hi, my name is Asheer Rizvi. I am a Web Developer who takes a keen
         interest in JavaScript and any JavaScript based stack out there. If I am
@@ -26,6 +26,53 @@ const About = () => {
         Something which will help me gauge how much I have improved as I code
         along.
       </p>
+      <h3
+        className="mt-8 
+      text-2xl text-gray-800"
+      >
+        Timeline
+      </h3>
+      <ul className="mt-6 list-inside list-disc text-lg">
+        <li>
+          <span className="font-semibold">2018 - Present: </span>Currently
+          working as a Network Engineer for HCL Technologies.
+        </li>
+        <li>
+          <span className="font-semibold">2017: </span>Started working as a
+          Mainframe Engineer at Wipro Technologies.
+        </li>
+        <li>
+          <span className="font-semibold">2017: </span>Completed College. Did
+          not learn much, wasn't how I expected it to go.
+        </li>
+        <li>
+          <span className="font-semibold">2013: </span>Started College.
+        </li>
+        <li>
+          <span className="font-semibold">2012: </span>Completed Senior
+          Secondary School.
+        </li>
+        <li>
+          <span className="font-semibold">2010: </span>Installed my first
+          homebrew on the PSP.
+        </li>
+        <li>
+          <span className="font-semibold">2010: </span>Completed High School,
+          bought myself a Sony PSP.
+        </li>
+        <li>
+          <span className="font-semibold">2001 - 2009: </span>Typical school
+          life. School to home, home to school.
+        </li>
+        <li>
+          <span className="font-semibold">1995 - 1998: </span>Mostly played
+          Contra and Super Mario Bros.
+        </li>
+        <li>
+          <span className="font-semibold">1993: </span>Born on a cold December
+          night.
+        </li>
+      </ul>
       <h3 className="mt-8 text-2xl text-gray-800">Skills</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3">
         <div>
@@ -98,12 +145,20 @@ const About = () => {
           </div>
         </div>
       </div>
-      <h3 className="mt-8 text-2xl text-gray-800">Timeline</h3>
+      <h3
+        className="mt-8 
+      text-2xl text-gray-800"
+      >
+        Interests
+      </h3>
       <ul className="mt-6 list-inside list-disc text-lg">
-        <li>
-          <span className="font-semibold">December, 1993: </span>Born on a cold
-          wintry night, December is probably my favorite month.
-        </li>
+        <li>Books</li>
+        <li>Cinema</li>
+        <li>CS GO & Video Games</li>
+        <li>Mechanical Keyboards</li>
+        <li>MotoGP</li>
+        <li>PC Builds</li>
+        <li>Travelling</li>
       </ul>
     </Layout>
   )

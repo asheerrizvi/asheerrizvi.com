@@ -9,7 +9,7 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="All posts" />
+      <SEO title="Blog" />
       <h2 className="mt-8 text-3xl text-gray-800">All Posts</h2>
       <BlogPosts posts={posts} />
     </Layout>
