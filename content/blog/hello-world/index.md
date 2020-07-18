@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Graphs, graph traversal algorithms and presenting them visually in React.
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 ---

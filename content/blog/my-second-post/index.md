@@ -1,5 +1,5 @@
 ---
-title: My Second Post!
+title: Build a blog in Gatsby powered by Tailwind and Netlify CMS.
 date: "2015-05-06T23:46:37.121Z"
 ---
 

@@ -9,25 +9,17 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <SEO title="All posts" />
+      <h4 className="text-gray-800">All Posts</h4>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
+          <article key={node.fields.slug} className="mt-8">
             <header>
-              <h3>
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
+              <span className="text-gray-800">{node.frontmatter.date}</span>
+              <h5>
+                <Link to={node.fields.slug}>{title}</Link>
+              </h5>
             </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
           </article>
         )
       })}
@@ -49,7 +41,6 @@ export const query = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }
