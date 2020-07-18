@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import BlogPosts from "../components/blogPosts"
 import SEO from "../components/seo"
 
 const Blog = ({ data }) => {
@@ -9,20 +10,8 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <SEO title="All posts" />
-      <h4 className="text-gray-800">All Posts</h4>
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug} className="mt-8">
-            <header>
-              <span className="text-gray-800">{node.frontmatter.date}</span>
-              <h5>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h5>
-            </header>
-          </article>
-        )
-      })}
+      <h2 className="mt-8 text-3xl text-gray-800">All Posts</h2>
+      <BlogPosts posts={posts} />
     </Layout>
   )
 }

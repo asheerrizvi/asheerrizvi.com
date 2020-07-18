@@ -8,12 +8,12 @@ const Header = ({ title }) => {
     <React.Fragment>
       <nav className="flex items-baseline justify-between flex-no-wrap">
         <div className="flex items-center flex-shrink-0">
-          <h4 className="font-light">
+          <h3 className="font-light text-3xl">
             <Link to={`/`}>{title}</Link>
-          </h4>
+          </h3>
         </div>
         <div>
-          <Link className="mr-3 font-light text-2xl" to={`/blog`}>
+          <Link className="mr-3 sm:mr-4 font-light text-2xl" to={`/blog`}>
             blog
           </Link>
           <Link className="font-light text-2xl" to={`/about`}>
