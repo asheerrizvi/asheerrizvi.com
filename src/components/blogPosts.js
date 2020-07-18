@@ -12,7 +12,7 @@ const BlogPosts = ({ posts }) => {
               <span className="block text-gray-800">
                 {node.frontmatter.date}
               </span>
-              <Link className="text-xl" to={node.fields.slug}>
+              <Link className="text-xl lg:text-2xl" to={node.fields.slug}>
                 {title}
               </Link>
             </div>
