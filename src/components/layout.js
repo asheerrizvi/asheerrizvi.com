@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <div className="container mx-auto px-6 mb-8">
       <Header title={title} />
-      <main>{children}</main>
+      <main className="prose lg:prose-xl max-w-none">{children}</main>
     </div>
   )
 }

@@ -1,11 +1,5 @@
 /*! purgecss start ignore */
 @tailwind base;
-
-a {
-  @apply text-blue-600;
-  @apply no-underline;
-}
-
 @tailwind components;
 /*! purgecss end ignore */
 @tailwind utilities;

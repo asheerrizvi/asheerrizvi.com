@@ -1,0 +1,30 @@
+.category {
+  @apply mt-0 !important;
+  @apply mb-1 !important;
+  @apply text-gray-900;
+  @apply font-semibold;
+}
+
+@screen lg {
+  .category {
+    @apply text-2xl;
+  }
+}
+
+.skill {
+  @apply inline-block;
+  @apply bg-gray-200;
+  @apply rounded-md;
+  @apply mt-3;
+  @apply mr-3;
+  @apply py-1;
+  @apply px-3;
+  @apply font-medium;
+  @apply text-gray-700;
+}
+
+@screen lg {
+  .skill {
+    @apply text-xl;
+  }
+}

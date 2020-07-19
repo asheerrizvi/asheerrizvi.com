@@ -1,13 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styles from "./about.module.css"
 
 const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <h2 className="text-3xl text-gray-800">About</h2>
-      <p className="mt-6 text-lg lg:text-xl text-gray-700">
+      <h2>About</h2>
+      <p>
         Hi, my name is Asheer Rizvi. I am a Web Developer who takes a keen
         interest in JavaScript and any JavaScript based stack out there. If I am
         being honest I wasn't that interested in JavaScript until late last
@@ -16,23 +17,18 @@ const About = () => {
         any significant utility. I learned frameworks first instead of
         understanding vanialla JavaScript to a decent extent.
       </p>
-      <p className="mt-6 text-lg lg:text-xl text-gray-700">
+      <p>
         The way I approach coding has changed significantly this year, these
         days I try to understand things which are the workhorses behind the
         abstractions before moving onto those abstractions.
       </p>
-      <p className="mt-6 text-lg lg:text-xl text-gray-700">
+      <p>
         This website is to act as a source of reference and reflection.
         Something which will help me gauge how much I have improved as I code
         along.
       </p>
-      <h3
-        className="mt-8 
-      text-2xl text-gray-800"
-      >
-        Timeline
-      </h3>
-      <ul className="mt-6 list-inside list-disc text-lg">
+      <h3>Timeline</h3>
+      <ul>
         <li>
           <span className="font-semibold">2018 - Present: </span>Currently
           working as a Network Engineer for HCL Technologies.
@@ -73,85 +69,38 @@ const About = () => {
           night.
         </li>
       </ul>
-      <h3 className="mt-8 text-2xl text-gray-800">Skills</h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3">
+      <h3>Skills</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
         <div>
-          <h4 className="mt-6 text-xl text-gray-800">Front-end</h4>
-          <div className="mt-1">
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              JavaScript
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              React
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Angular
-            </span>
-          </div>
+          <p className={styles.category}>Front-end</p>
+          <span className={styles.skill}>JavaScript</span>
+          <span className={styles.skill}>React</span>
+          <span className={styles.skill}>Angular</span>
         </div>
         <div>
-          <h4 className="mt-6 text-xl text-gray-800">Back-end</h4>
-          <div className="mt-1">
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              REST
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              GraphQL
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              NodeJS
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              ExpressJS
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              MongoDB
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              MySQL
-            </span>
-          </div>
+          <p className={styles.category}>Back-end</p>
+          <span className={styles.skill}>REST</span>
+          <span className={styles.skill}>GraphQL</span>
+          <span className={styles.skill}>Node JS</span>
+          <span className={styles.skill}>Express JS</span>
+          <span className={styles.skill}>Mongo DB</span>
+          <span className={styles.skill}>MySQL</span>
         </div>
         <div>
-          <h4 className="mt-6 text-xl text-gray-800">Frameworks & Libraries</h4>
-          <div className="mt-1">
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Gatsby
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Ionic
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              NextJS
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              TailwindCSS
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Emotion
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              ClarityUI
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Styled Components
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Bulma
-            </span>
-            <span className="inline-block bg-gray-200 rounded mt-3 mr-3 px-3 py-1 text-md font-medium text-gray-700">
-              Bootstrap
-            </span>
-          </div>
+          <p className={styles.category}>Frameworks & Libraries</p>
+          <span className={styles.skill}>Gatsby</span>
+          <span className={styles.skill}>Ionic</span>
+          <span className={styles.skill}>Next JS</span>
+          <span className={styles.skill}>TailwindCSS</span>
+          <span className={styles.skill}>Emotion</span>
+          <span className={styles.skill}>Clarity UI</span>
+          <span className={styles.skill}>Styled Components</span>
+          <span className={styles.skill}>Bulma</span>
+          <span className={styles.skill}>Bootstrap</span>
         </div>
       </div>
-      <h3
-        className="mt-8 
-      text-2xl text-gray-800"
-      >
-        Interests
-      </h3>
-      <ul className="mt-6 list-inside list-disc text-lg">
+      <h3>Interests</h3>
+      <ul>
         <li>Books</li>
         <li>Cinema</li>
         <li>CS GO & Video Games</li>
