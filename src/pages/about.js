@@ -71,13 +71,13 @@ const About = () => {
       </ul>
       <h3>Skills</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
-        <div>
+        <div className="my-3 lg:my-0">
           <p className={styles.category}>Front-end</p>
           <span className={styles.skill}>JavaScript</span>
           <span className={styles.skill}>React</span>
           <span className={styles.skill}>Angular</span>
         </div>
-        <div>
+        <div className="my-3 lg:my-0">
           <p className={styles.category}>Back-end</p>
           <span className={styles.skill}>REST</span>
           <span className={styles.skill}>GraphQL</span>
@@ -86,7 +86,7 @@ const About = () => {
           <span className={styles.skill}>Mongo DB</span>
           <span className={styles.skill}>MySQL</span>
         </div>
-        <div>
+        <div className="my-3 lg:my-0">
           <p className={styles.category}>Frameworks & Libraries</p>
           <span className={styles.skill}>Gatsby</span>
           <span className={styles.skill}>Ionic</span>

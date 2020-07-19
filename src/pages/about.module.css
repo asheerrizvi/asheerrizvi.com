@@ -8,17 +8,18 @@
 @screen lg {
   .category {
     @apply text-2xl;
+    @apply mb-0 !important;
   }
 }
 
 .skill {
   @apply inline-block;
-  @apply bg-gray-200;
-  @apply rounded-md;
-  @apply mt-3;
-  @apply mr-3;
+  @apply mt-2;
+  @apply mr-2;
   @apply py-1;
   @apply px-3;
+  @apply bg-gray-200;
+  @apply rounded-md;
   @apply font-medium;
   @apply text-gray-700;
 }
@@ -26,5 +27,7 @@
 @screen lg {
   .skill {
     @apply text-xl;
+    @apply mt-3;
+    @apply mr-3;
   }
 }
