@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import BlogPosts from "../components/blogPosts"
+import BlogPosts from "../components/blog-posts"
 import SEO from "../components/seo"
 
 const Home = ({ data }) => {
@@ -20,7 +20,7 @@ const Home = ({ data }) => {
       </p>
       <p>
         Check out my <Link to="/blog">blog</Link>, go through the{" "}
-        <Link to="/about">about</Link> section or drop a mail at{" "}
+        <Link to="/about">about</Link> section or drop an email at{" "}
         <a href="mailto:mail@asheerrizvi.com">mail@asheerrizvi.com</a>.
       </p>
       <h2>Recent Blog Posts</h2>

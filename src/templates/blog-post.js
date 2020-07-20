@@ -1,46 +1,49 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styles from "./blog-post.module.css"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
 
+  const navigateToPost = slug => {
+    navigate(slug)
+  }
+
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
+      <h2 className={styles.title}>{post.frontmatter.title}</h2>
+      <p>{post.frontmatter.date}</p>
       <article>
-        <header>
-          <h3>{post.frontmatter.title}</h3>
-          <p>{post.frontmatter.date}</p>
-        </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
-        <footer>
-          <Bio />
-        </footer>
       </article>
 
-      <nav>
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+      <nav className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {previous ? (
+          <button
+            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-lg inline-flex items-center justify-center"
+            onClick={() => navigateToPost(previous.fields.slug)}
+          >
+            {previous.frontmatter.title}
+          </button>
+        ) : (
+          <div className="hidden lg:block lg:bg-white lg:py-4 lg:px-4"></div>
+        )}
+        {next ? (
+          <button
+            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-lg inline-flex items-center justify-center"
+            onClick={() => navigateToPost(next.fields.slug)}
+          >
+            {next.frontmatter.title}
+          </button>
+        ) : (
+          <div className="hidden lg:block lg:bg-white lg:py-4 lg:px-4"></div>
+        )}
       </nav>
     </Layout>
   )
@@ -52,7 +55,6 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
