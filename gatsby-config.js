@@ -65,13 +65,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Asheer Rizvi's Personal Website and Blog`,
+        short_name: `asheerrizvi.com`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#9561aa`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
