@@ -1,6 +1,7 @@
 ---
+foldername: post-to-my-future-self
+date: 2020-07-21T12:15:12.363Z
 title: A post to my future self
-date: "2020-07-21"
 ---
 
 A couple of days ago, I decided on a whim to write a blog. I wasn't clear what purpose would it serve. I do not consider myself an accomplished developer yet and so what could I offer? At the same time one should be able to gauge their progress and learn from what they did in the past.
