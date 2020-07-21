@@ -12,19 +12,19 @@ const Footer = () => {
       <nav className="flex mt-16 justify-center md:justify-start md:-ml-8">
         <Link
           to="/"
-          className="lg:hover:bg-indigo-100 text-xl text-indigo-500 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
+          className="lg:hover:bg-indigo-100 text-xl text-purple-600 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
         >
           Home
         </Link>
         <Link
           to="/blog"
-          className="lg:hover:bg-indigo-100 text-xl text-indigo-500 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
+          className="lg:hover:bg-indigo-100 text-xl text-purple-600 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
         >
           Blog
         </Link>
         <Link
           to="/about"
-          className="lg:hover:bg-indigo-100 text-xl text-indigo-500 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
+          className="lg:hover:bg-indigo-100 text-xl text-purple-600 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
         >
           About
         </Link>

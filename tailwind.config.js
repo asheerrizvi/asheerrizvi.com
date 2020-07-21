@@ -22,7 +22,7 @@ module.exports = {
             fontWeight: "400",
           },
           a: {
-            color: "#667EEA",
+            color: "#805AD5",
             textDecoration: "none",
           },
         },

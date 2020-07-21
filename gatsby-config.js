@@ -69,7 +69,7 @@ module.exports = {
         short_name: `asheerrizvi.com`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#9561aa`,
+        theme_color: `#805AD5`,
         display: `minimal-ui`,
         icon: `content/assets/logo.svg`,
       },

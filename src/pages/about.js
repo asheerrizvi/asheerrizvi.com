@@ -1,7 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "./about.module.css"
+import Skills from "../components/skills"
+import Timeline from "../components/timeline"
+
+import skills from "../data/skills"
+import events from "../data/events"
 
 const About = () => {
   return (
@@ -15,7 +19,8 @@ const About = () => {
         year, I thought of it as an "easy going" language, something which
         wasn't powerful enough in itself but needed to be "extended" to be of
         any significant utility. I learned frameworks first instead of
-        understanding vanialla JavaScript to a decent extent.
+        understanding vanialla JavaScript to a decent extent. And boy was I
+        wrong.
       </p>
       <p>
         The way I approach coding has changed significantly this year, these
@@ -23,82 +28,14 @@ const About = () => {
         abstractions before moving onto those abstractions.
       </p>
       <p>
-        This website is to act as a source of reference and reflection.
+        I want this website to be a source of reference and reflection.
         Something which will help me gauge how much I have improved as I code
         along.
       </p>
       <h3>Timeline</h3>
-      <ul>
-        <li>
-          <span className="font-semibold">2018 - Present: </span>Currently
-          working as a Network Engineer for HCL Technologies.
-        </li>
-        <li>
-          <span className="font-semibold">2017: </span>Started working as a
-          Mainframe Engineer at Wipro Technologies.
-        </li>
-        <li>
-          <span className="font-semibold">2017: </span>Completed College. Did
-          not learn much, wasn't how I expected it to go.
-        </li>
-        <li>
-          <span className="font-semibold">2013: </span>Started College.
-        </li>
-        <li>
-          <span className="font-semibold">2012: </span>Completed Senior
-          Secondary School.
-        </li>
-        <li>
-          <span className="font-semibold">2010: </span>Installed my first
-          homebrew on the PSP.
-        </li>
-        <li>
-          <span className="font-semibold">2010: </span>Completed High School,
-          bought myself a Sony PSP.
-        </li>
-        <li>
-          <span className="font-semibold">2001 - 2009: </span>Typical school
-          life. School to home, home to school.
-        </li>
-        <li>
-          <span className="font-semibold">1995 - 1998: </span>Mostly played
-          Contra and Super Mario Bros.
-        </li>
-        <li>
-          <span className="font-semibold">1993: </span>Born on a cold December
-          night.
-        </li>
-      </ul>
+      <Timeline data={events} />
       <h3>Skills</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
-        <div className="my-3 lg:my-0">
-          <p className={styles.category}>Front-end</p>
-          <span className={styles.skill}>JavaScript</span>
-          <span className={styles.skill}>React</span>
-          <span className={styles.skill}>Angular</span>
-        </div>
-        <div className="my-3 lg:my-0">
-          <p className={styles.category}>Back-end</p>
-          <span className={styles.skill}>REST</span>
-          <span className={styles.skill}>GraphQL</span>
-          <span className={styles.skill}>Node JS</span>
-          <span className={styles.skill}>Express JS</span>
-          <span className={styles.skill}>Mongo DB</span>
-          <span className={styles.skill}>MySQL</span>
-        </div>
-        <div className="my-3 lg:my-0">
-          <p className={styles.category}>Frameworks & Libraries</p>
-          <span className={styles.skill}>Gatsby</span>
-          <span className={styles.skill}>Ionic</span>
-          <span className={styles.skill}>Next JS</span>
-          <span className={styles.skill}>TailwindCSS</span>
-          <span className={styles.skill}>Emotion</span>
-          <span className={styles.skill}>Clarity UI</span>
-          <span className={styles.skill}>Styled Components</span>
-          <span className={styles.skill}>Bulma</span>
-          <span className={styles.skill}>Bootstrap</span>
-        </div>
-      </div>
+      <Skills data={skills} />
       <h3>Interests</h3>
       <ul>
         <li>Books</li>
