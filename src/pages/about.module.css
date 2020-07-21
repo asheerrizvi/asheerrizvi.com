@@ -20,7 +20,6 @@
   @apply px-3;
   @apply bg-gray-200;
   @apply rounded-md;
-  @apply font-medium;
   @apply text-gray-700;
 }
 
