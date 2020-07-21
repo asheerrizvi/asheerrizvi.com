@@ -6,13 +6,13 @@ const Header = ({ title }) => {
     <header className="mb-16">
       <nav className="flex items-baseline justify-between flex-no-wrap">
         <div className="flex items-center flex-shrink-0">
-          <h3 className="font-light text-3xl text-indigo-500">
+          <h3 className="text-3xl text-indigo-500">
             <Link to={`/`}>{title}</Link>
           </h3>
         </div>
         <div>
           <Link
-            className="mr-3 sm:mr-4 font-light text-2xl text-indigo-500"
+            className="font-light mr-3 md:mr-6 text-2xl text-indigo-500"
             to={`/blog`}
           >
             blog
