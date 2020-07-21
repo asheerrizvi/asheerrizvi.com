@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import gatsby from "../../content/assets/gatsby-logo.png"
-import netlify from "../../content/assets/netlify-logo.png"
-import github from "../../content/assets/github-logo.png"
-import twitter from "../../content/assets/twitter-logo.png"
+import gatsby from "../../content/assets/gatsby-logo.svg"
+import netlify from "../../content/assets/netlify-logo.svg"
+import github from "../../content/assets/github-logo.svg"
+import twitter from "../../content/assets/twitter-logo.svg"
 
 const Footer = () => {
   return (
