@@ -33,19 +33,17 @@ export default Home
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      limit: 3
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(limit: 5, sort: { fields: frontmatter___date }) {
       edges {
         node {
-          excerpt
+          id
           fields {
             slug
           }
+          excerpt
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
