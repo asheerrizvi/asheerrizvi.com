@@ -33,7 +33,10 @@ export default Home
 
 export const query = graphql`
   query {
-    allMarkdownRemark(limit: 5, sort: { fields: frontmatter___date }) {
+    allMarkdownRemark(
+      limit: 5
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       edges {
         node {
           id
