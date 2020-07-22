@@ -3,9 +3,9 @@ import React from "react"
 const Timeline = ({ data }) => {
   return (
     <ul>
-      {data.map(node => {
+      {data.map((node, index) => {
         return (
-          <li>
+          <li key={index}>
             <span className="font-semibold">{node.timespan}:</span>{" "}
             {node.description}
           </li>

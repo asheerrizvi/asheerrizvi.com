@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const BlogPosts = ({ posts }) => {
   return (
-    <React.Fragment>
+    <>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -19,7 +19,7 @@ const BlogPosts = ({ posts }) => {
           </Link>
         )
       })}
-    </React.Fragment>
+    </>
   )
 }
 

@@ -35,7 +35,7 @@ const Footer = () => {
           title="Built with Gatsby"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-3 md:mx-6 mx-auto md:mx-0"
+          className="inline-block max-w-full h-auto mx-auto md:mx-6"
         >
           <img src={gatsby} className="h-8 w-8" alt="Gatsby" />
         </a>
@@ -44,7 +44,7 @@ const Footer = () => {
           title="Hosted on Netlify"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-3 md:mx-6 mx-auto md:mx-0"
+          className="inline-block max-w-full h-auto mx-auto md:mx-6"
         >
           <img src={netlify} className="h-8 w-8" alt="Netlify" />
         </a>
@@ -53,7 +53,7 @@ const Footer = () => {
           title="Asheer Rizvi on Github"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-3 md:mx-6 mx-auto md:mx-0"
+          className="inline-block max-w-full h-auto mx-auto md:mx-6"
         >
           <img src={github} className="h-8 w-8" alt="Github" />
         </a>
@@ -62,7 +62,7 @@ const Footer = () => {
           title="Asheer Rizvi on Twitter"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-3 md:mx-6 mx-auto md:mx-0"
+          className="inline-block max-w-full h-auto mx-auto md:mx-6"
         >
           <img src={twitter} className="h-8 w-8" alt="Twitter" />
         </a>
