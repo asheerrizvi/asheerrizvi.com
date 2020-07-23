@@ -87,7 +87,7 @@ Before I spin up my development server, I want to go ahead and wrap our content 
 
 At this point localhost:8000 should look like this.
 
-![Website with Primitive UI](./website-with-primitiveui.png)
+![Website with Primitive UI](website-with-primitiveui.png)
 
 ### Refactoring Components
 
@@ -339,7 +339,7 @@ export default Home;
 
 The overall structure and styling of the website is now complete, at this point the website should look somewhat like this.
 
-![Styled website screenshot](./styling-completed.png)
+![Styled website screenshot](styling-completed.png)
 
 ### Adding Netlify CMS
 
@@ -420,15 +420,15 @@ $ git push origin master
 
 Signing up on [app.netlify.com](https://app.netlify.com) I can click on the "New Site from Git" button and choose Github as a source followed by deploying the website with the default options.
 
-![Create a website on Netlify](./create-a-site-netlify.png)
+![Create a website on Netlify](create-a-site-netlify.png)
 
 Finally, to let Netlify CMS have access to my website, I need to setup an OAuth application on Github. This can be setup by following [these instructions](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#using-an-authentication-provider). Once setup, I can go to the settings of my website on Netlify and open the "Access Control" section towards the bottom of these settings.
 
-![Access OAuth provider in Netlify Settings](./install-o-auth-start.png)
+![Access OAuth provider in Netlify Settings](install-o-auth-start.png)
 
 Clicking on "Install Provider" within the OAuth section I can copy and paste the Client ID and Secret from the OAuth application created on Github earlier and click the "Install" button.
 
-![Specify the client secret and client ID of Netlify](./install-o-auth-finish.png)
+![Specify the client secret and client ID of Netlify](install-o-auth-finish.png)
 
 ### Accessing Netlify CMS
 
@@ -448,5 +448,5 @@ I am going to remove some already existing blog posts and edit the one with the 
 
 The public repo for this website and the deployed website itself can be found on the links below:
 
-- [Source Code](https://github.com/asheerrizvi/bilbosdiary)
-- [Deployed Website](https://bilbosdiary.netlify.app)
+* [Source Code](https://github.com/asheerrizvi/bilbosdiary)
+* [Deployed Website](https://bilbosdiary.netlify.app)
