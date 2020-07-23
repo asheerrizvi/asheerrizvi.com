@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       <nav className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {previous ? (
           <button
-            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-lg inline-flex items-center justify-center"
+            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-md inline-flex items-center justify-center"
             onClick={() => navigateToPost(previous.fields.slug)}
           >
             {previous.frontmatter.title}
@@ -36,7 +36,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         )}
         {next ? (
           <button
-            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-lg inline-flex items-center justify-center"
+            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-md inline-flex items-center justify-center"
             onClick={() => navigateToPost(next.fields.slug)}
           >
             {next.frontmatter.title}

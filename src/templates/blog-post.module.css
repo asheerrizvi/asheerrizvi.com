@@ -1,3 +1,12 @@
 .title {
   @apply mb-3 !important;
 }
+
+img {
+  @apply rounded-md !important;
+  @apply shadow-md !important;
+}
+
+pre {
+  @apply shadow-md !important;
+}
