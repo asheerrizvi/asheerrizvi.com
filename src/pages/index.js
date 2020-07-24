@@ -9,7 +9,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
       <h1>Welcome to my dysfunctional presence on the Web.</h1>
       <p>
         I am a Web Developer with a particular interest in JavaScript and

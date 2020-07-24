@@ -5,12 +5,13 @@ const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
-    title: `asheerRizvi`,
+    title: `Asheer Rizvi`,
     author: {
       name: `Asheer Rizvi`,
-      summary: `Web developer in a love-hate relationship with JavaScript.`,
+      summary: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
     },
-    description: `Personal Website and Blog.`,
+    pathPrefix: "/",
+    description: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
     siteUrl: `https://asheerrizvi.com/`,
     social: {
       twitter: `asheerrizvi`,
@@ -65,8 +66,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Asheer Rizvi's Personal Website and Blog`,
-        short_name: `asheerrizvi.com`,
+        name: `Asheer Rizvi`,
+        short_name: `Asheer Rizvi`,
+        description: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#805AD5`,
