@@ -36,6 +36,21 @@ module.exports = {
             margin: "1.25rem -1.5rem",
             padding: "1.5rem",
           },
+          "code[class*=language-text]": {
+            fontSize: "1rem",
+            fontWeight: "400",
+            padding: ".1em .3em",
+            borderRadius: ".3rem",
+            color: "#805AD5",
+            backgroundColor: "#f8f5ff",
+            textShadow: "none",
+          },
+          "code::before": {
+            content: "",
+          },
+          "code::after": {
+            content: "",
+          },
           "@media (min-width: 768px)": {
             "pre[class*=language-]": {
               borderRadius: "0.375rem",

@@ -10,12 +10,13 @@ module.exports = {
       name: `Asheer Rizvi`,
       summary: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
     },
-    pathPrefix: "/",
+    pathPrefix: `/`,
     description: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
     siteUrl: `https://asheerrizvi.com/`,
     social: {
-      twitter: `asheerrizvi`,
+      twitter: `rizvi_asheer`,
     },
+    logo: `content/assets/logo.svg`,
   },
   plugins: [
     {
