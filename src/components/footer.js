@@ -8,28 +8,30 @@ import twitter from "../../content/assets/twitter-logo.svg"
 
 const Footer = () => {
   return (
-    <footer>
-      <nav className="flex mt-16 justify-center md:justify-start md:-ml-8">
+    <footer className="mt-20">
+      <nav className="flex justify-center">
         <Link
           to="/"
-          className="lg:hover:bg-indigo-100 text-xl text-purple-600 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
+          className="text-base hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600"
         >
           Home
         </Link>
+        <span className="px-4">•</span>
         <Link
           to="/blog"
-          className="lg:hover:bg-indigo-100 text-xl text-purple-600 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
+          className="text-base hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600"
         >
           Blog
         </Link>
+        <span className="px-4">•</span>
         <Link
           to="/about"
-          className="lg:hover:bg-indigo-100 text-xl text-purple-600 px-4 py-2 md:px-8 md:py-4 mx-auto md:mx-0 focus:outline-none rounded-md"
+          className="text-base hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600"
         >
           About
         </Link>
       </nav>
-      <nav className="flex mt-8 justify-center md:justify-start md:-ml-6">
+      <nav className="flex mt-8 justify-center">
         <a
           href="https://www.gatsbyjs.org/"
           title="Built with Gatsby"

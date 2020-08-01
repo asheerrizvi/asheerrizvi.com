@@ -25,6 +25,9 @@ const Home = ({ data }) => {
       </p>
       <h2>Recent Blog Posts</h2>
       <BlogPosts posts={posts} />
+      <button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold leading-tight py-3 px-4 mt-8 rounded-md">
+        <Link to="/blog" className="text-white">Read More</Link>
+      </button>
     </Layout>
   )
 }
