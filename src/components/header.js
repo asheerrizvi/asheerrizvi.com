@@ -48,7 +48,7 @@ const Header = ({ title }) => {
               title="Asheer Rizvi on Twitter"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base md:text-xl mr-4 text-gray-600 hover:underline"
+              className="text-base md:text-xl text-gray-600 hover:underline"
             >
               Twitter
             </a>

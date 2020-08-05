@@ -56,7 +56,7 @@ module.exports = {
           "pre[class*=language-]": {
             fontSize: "1rem",
             borderRadius: "0",
-            margin: "1.25rem -1.5rem",
+            margin: "1.25rem -1rem",
             padding: "1.5rem",
           },
           "code[class*=language-text]": {
