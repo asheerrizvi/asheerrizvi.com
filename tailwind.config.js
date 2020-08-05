@@ -1,11 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.js"],
   theme: {
-    extend: {
-      fontFamily: {
-        sourceSansPro: ["Source Sans Pro", "sans-serif"],
-      },
-    },
     typography: {
       default: {
         css: {
