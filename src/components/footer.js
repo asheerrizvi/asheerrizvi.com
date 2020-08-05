@@ -8,7 +8,7 @@ import twitter from "../../content/assets/twitter-logo.svg"
 
 const Footer = () => {
   return (
-    <footer className="mt-20">
+    <footer className="mb-16">
       <nav className="flex justify-center">
         <Link
           to="/"

@@ -9,27 +9,25 @@ const Header = ({ title }) => {
     )
     .join("")
   return (
-    <header className="mb-16">
-      <nav className="flex items-baseline justify-between flex-no-wrap">
-        <div className="flex items-center flex-shrink-0">
-          <Link className="text-2xl md:text-4xl text-purple-600" to={`/`}>
-            {title}
-          </Link>
-        </div>
+    <header className="flex items-center mb-16 h-16 md:h-20 bg-purple-600">
+      <nav className="container flex items-center justify-between flex-no-wrap">
+        <Link className="text-xl md:text-3xl text-white" to={`/`}>
+          {title}
+        </Link>
         <div>
           <Link
-            className="text-xl md:text-2xl text-purple-600 pb-1 mr-4 md:mr-6"
+            className="text-lg md:text-xl text-white pb-1 mr-4 md:mr-6"
             activeClassName="border-b-2 border-purple-600"
             to={`/blog/`}
           >
-            Blog
+            blog
           </Link>
           <Link
-            className="text-xl md:text-2xl text-purple-600 pb-1"
+            className="text-lg md:text-xl text-white pb-1"
             activeClassName="border-b-2 border-purple-600"
             to={`/about/`}
           >
-            About
+            about
           </Link>
         </div>
       </nav>

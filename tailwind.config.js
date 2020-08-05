@@ -1,6 +1,15 @@
 module.exports = {
   purge: ["./src/**/*.js"],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        default: "1.5rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "6rem",
+      },
+    },
     typography: {
       default: {
         css: {
