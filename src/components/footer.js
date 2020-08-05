@@ -1,74 +1,52 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import gatsby from "../../content/assets/gatsby-logo.svg"
-import netlify from "../../content/assets/netlify-logo.svg"
-import github from "../../content/assets/github-logo.svg"
-import twitter from "../../content/assets/twitter-logo.svg"
 
 const Footer = () => {
   return (
-    <footer className="mb-16">
-      <nav className="flex justify-center">
-        <Link
-          to="/"
-          className="text-base hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600"
-        >
-          Home
-        </Link>
-        <span className="px-4">•</span>
-        <Link
-          to="/blog"
-          className="text-base hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600"
-        >
-          Blog
-        </Link>
-        <span className="px-4">•</span>
-        <Link
-          to="/about"
-          className="text-base hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600"
-        >
-          About
-        </Link>
-      </nav>
-      <nav className="flex mt-8 justify-center">
+    <footer className="flex justify-center flex-wrap md:justify-between md:flex-no-wrap font-body mb-8 pt-4 border-t border-gray-400">
+      <div className="text-gray-600">
+        Built with{" "}
         <a
-          href="https://www.gatsbyjs.org/"
-          title="Built with Gatsby"
+          href="https://www.gatsbyjs.org"
+          title="Gatsby's official website"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-auto md:mx-6"
+          className="underline"
         >
-          <img src={gatsby} className="h-8 w-8" alt="Gatsby" />
+          Gatsby
         </a>
+        ,{" "}
         <a
-          href="https://www.netlify.com/"
-          title="Hosted on Netlify"
+          href="https://www.reactjs.org"
+          title="React's official website"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-auto md:mx-6"
+          className="underline"
         >
-          <img src={netlify} className="h-8 w-8" alt="Netlify" />
-        </a>
+          React
+        </a>{" "}
+        and{" "}
         <a
-          href="https://www.github.com/asheerrizvi"
-          title="Asheer Rizvi on Github"
+          href="https://www.netlify.com"
+          title="Netlify's official website"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-auto md:mx-6"
+          className="underline"
         >
-          <img src={github} className="h-8 w-8" alt="Github" />
+          Netlify
         </a>
+      </div>
+      <div className="text-gray-600">
+        Open sourced on{" "}
         <a
-          href="https://www.twitter.com/rizvi_asheer"
-          title="Asheer Rizvi on Twitter"
+          href="https://www.github.com/asheerrizvi/asheerrizvi.com"
+          title="Website repository on Github"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block max-w-full h-auto mx-auto md:mx-6"
+          className="underline"
         >
-          <img src={twitter} className="h-8 w-8" alt="Twitter" />
+          Github
         </a>
-      </nav>
+      </div>
     </footer>
   )
 }

@@ -17,13 +17,13 @@ const Layout = ({ children }) => {
   )
   const title = data.site.siteMetadata.title
   return (
-    <>
+    <div className="container">
       <Header title={title} />
-      <div className="container mb-16">
-        <main className="prose lg:prose-lg max-w-none mb-auto">{children}</main>
-      </div>
+      <main className="font-body prose lg:prose-lg max-w-none mb-20">
+        {children}
+      </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

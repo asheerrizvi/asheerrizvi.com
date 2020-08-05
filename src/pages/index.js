@@ -23,7 +23,7 @@ const Home = ({ data }) => {
         <Link to="/about">about</Link> section or drop an email at{" "}
         <a href="mailto:mail@asheerrizvi.com">mail@asheerrizvi.com</a>.
       </p>
-      <h2>Recent Blog Posts</h2>
+      <h2 className="pb-4 border-b border-gray-400">Recent Posts</h2>
       <BlogPosts posts={posts} />
     </Layout>
   )

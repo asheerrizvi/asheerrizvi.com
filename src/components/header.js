@@ -9,26 +9,50 @@ const Header = ({ title }) => {
     )
     .join("")
   return (
-    <header className="flex items-center mb-16 h-16 md:h-20 bg-purple-600">
-      <nav className="container flex items-center justify-between flex-no-wrap">
-        <Link className="text-xl md:text-3xl text-white" to={`/`}>
-          {title}
-        </Link>
-        <div>
-          <Link
-            className="text-lg md:text-xl text-white pb-1 mr-4 md:mr-6"
-            activeClassName="border-b-2 border-purple-600"
-            to={`/blog/`}
-          >
-            blog
+    <header className="mt-4 md:mt-8 mb-20 font-body">
+      <nav className="flex flex-col">
+        <div className="mb-4">
+          <Link className="text-2xl md:text-3xl text-purple-600" to={`/`}>
+            {title}
           </Link>
-          <Link
-            className="text-lg md:text-xl text-white pb-1"
-            activeClassName="border-b-2 border-purple-600"
-            to={`/about/`}
-          >
-            about
-          </Link>
+        </div>
+        <div className="flex justify-between pb-4 border-b border-gray-400">
+          <div>
+            <Link
+              className="text-base md:text-xl mr-4 text-gray-600 hover:underline"
+              activeClassName="underline"
+              to={`/blog/`}
+            >
+              Blog
+            </Link>
+            <Link
+              className="text-base md:text-xl text-gray-600 hover:underline"
+              activeClassName="underline"
+              to={`/about/`}
+            >
+              About
+            </Link>
+          </div>
+          <div>
+            <a
+              href="https://www.github.com/asheerrizvi"
+              title="Asheer Rizvi on Github"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base md:text-xl mr-4 text-gray-600 hover:underline"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.twitter.com/rizvi_asheer"
+              title="Asheer Rizvi on Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base md:text-xl mr-4 text-gray-600 hover:underline"
+            >
+              Twitter
+            </a>
+          </div>
         </div>
       </nav>
     </header>
