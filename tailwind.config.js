@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: [
+        sans: [
           "IBM Plex Sans",
           "-apple-system",
           "BlinkMacSystemFont",
