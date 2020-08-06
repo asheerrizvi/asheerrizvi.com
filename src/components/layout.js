@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   return (
     <div className="container">
       <Header title={title} />
-      <main className="prose lg:prose-lg max-w-none mb-20">
+      <main className="font-body prose lg:prose-lg max-w-none mb-20">
         {children}
       </main>
       <Footer />
