@@ -9,7 +9,7 @@ const Header = ({ title }) => {
     )
     .join("")
   return (
-    <header className="mt-4 md:mt-8 mb-20 font-body">
+    <header className="mt-4 md:mt-8 mb-20">
       <nav className="flex flex-col">
         <div className="mb-4">
           <Link className="text-2xl md:text-3xl text-purple-600" to={`/`}>
