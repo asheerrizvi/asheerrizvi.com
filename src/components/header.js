@@ -16,7 +16,7 @@ const Header = ({ title }) => {
             {title}
           </Link>
         </div>
-        <div className="flex justify-between pb-4 border-b border-gray-400">
+        <div className="flex justify-between items-baseline pb-4 border-b border-gray-400">
           <div>
             <Link
               className="text-base md:text-xl mr-4 hover:underline"
@@ -33,7 +33,7 @@ const Header = ({ title }) => {
               About
             </Link>
           </div>
-          <div className="flex justify-start items-start text-gray-500">
+          <div className="flex text-gray-500">
             <a
               href="https://www.github.com/asheerrizvi"
               title="Asheer Rizvi on Github"
