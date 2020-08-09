@@ -39,7 +39,7 @@ const Header = ({ title }) => {
               title="Asheer Rizvi on Github"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-4 hover:text-gray-600 visited:text-red-500"
+              className="mr-4 hover:text-gray-600"
             >
               <svg
                 className="fill-current w-5 h-5"
