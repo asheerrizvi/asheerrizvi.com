@@ -5,18 +5,24 @@ export default [
       "Currently working as a Network Engineer for HCL Technologies.",
   },
   {
+    timespan: "2018",
+    description:
+      "Left Wipro to head back home.",
+  },
+  {
     timespan: "2017",
     description:
       "Started working as a Mainframe Engineer at Wipro Technologies.",
   },
   {
-    timespan: "2017",
+    timespan: "2016",
     description:
-      "Completed College. Did not learn much, wasn't how I expected it to go.",
+      "Worked as a Frontend Developer for a startup called AirCountr. They did not pay me for my work :(",
   },
   {
-    timespan: "2013",
-    description: "Started College.",
+    timespan: "2013 - 2017",
+    description:
+      "College. Did not learn much, the curriculum wasn't that good.",
   },
   {
     timespan: "2012",
@@ -24,15 +30,13 @@ export default [
   },
   {
     timespan: "2010",
-    description: "Installed my first homebrew on the PSP.",
-  },
-  {
-    timespan: "2010",
-    description: "Completed High School, bought myself a Sony PSP.",
+    description:
+      "Completed High School. Bought myself the PSP, installed a custom homebrew and quickly became bored of it.",
   },
   {
     timespan: "2001 - 2009",
-    description: "Typical school ife. School to home, home to school.",
+    description:
+      "School and all the qualms that come with it. I wasn't that good of a student.",
   },
   {
     timespan: "1995 - 1998",

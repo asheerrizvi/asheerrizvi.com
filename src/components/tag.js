@@ -1,6 +1,6 @@
 import React from "react"
 
-const Skills = ({ data }) => {
+const Tag = ({ data }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
       {data.map(node => {
@@ -26,4 +26,4 @@ const Skills = ({ data }) => {
   )
 }
 
-export default Skills
+export default Tag

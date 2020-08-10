@@ -10,18 +10,21 @@ const Home = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <h1>Welcome to my dysfunctional presence on the Web.</h1>
+      <h1>Hello! and welcome to my dysfunctional presence on Web.</h1>
       <p>
-        I am a Web Developer with a particular interest in JavaScript and
-        JavaScript based stacks. This is my personal website and blog, created
-        to serve as an online journal for myself and for anyone who may stumble
-        upon this remote corner of the web. By the way, I am currently having a
-        love-hate relationship with JavaScript.
+        I am a Web Developer having a particular interest in JavaScript and
+        JavaScript based stacks. This is my personal website and blog which I
+        use as a personal journal, I will probably diss my older posts as I go
+        along. Over the last couple of months I have come to discover that JS is
+        quite a "quirky" language, the realization has been humbling and quite
+        fun at the same time. At this point I am just happy to code along every
+        day.
       </p>
       <p>
         Check out my <Link to="/blog">blog</Link>, go through the{" "}
         <Link to="/about">about</Link> section or drop an email at{" "}
-        <a href="mailto:mail@asheerrizvi.com">mail@asheerrizvi.com</a>.
+        <a href="mailto:mail@asheerrizvi.com">mail@asheerrizvi.com</a>. I would
+        love feedback, suggestions and any PRs whatsoever.
       </p>
       <h2 className="pb-4 border-b border-gray-400">Recent Posts</h2>
       <BlogPosts posts={posts} />

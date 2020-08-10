@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Skills from "../components/skills"
+import Tag from "../components/tag"
 import Timeline from "../components/timeline"
 
 import skills from "../data/skills"
@@ -14,28 +14,29 @@ const About = () => {
       <h2>About</h2>
       <p>
         Hi, my name is Asheer Rizvi. I am a Web Developer who takes a keen
-        interest in JavaScript and any JavaScript based stack out there. If I am
-        being honest I wasn't that interested in JavaScript until late last
-        year, I thought of it as an "easy going" language, something which
-        wasn't powerful enough in itself but needed to be "extended" to be of
-        any significant utility. I learned frameworks first instead of
-        understanding vanialla JavaScript to a decent extent. And boy was I
-        wrong.
+        interest in JavaScript. If I am being honest, I wasn't that interested
+        in JavaScript until late last year. I thought of JS as an "easy going"
+        language, a language which wasn't powerful enough in itself and needed
+        to be "extended" by frameworks and tooling to be of any significant use.
+        I WAS QUITE WRONG. I learned frameworks first instead of understanding
+        JavaScript to a decent extent and built abstractions upon abstractions
+        in my mind. Personally, this was an abysmal approach.
       </p>
       <p>
         The way I approach coding has changed significantly this year, these
-        days I try to understand things which are the workhorses behind the
-        abstractions before moving onto those abstractions.
+        days I try to understand things which are the workhorses behind the much
+        more abstract features of web development that we see today.
       </p>
       <p>
         I want this website to be a source of reference and reflection.
         Something which will help me gauge how much I have improved as I code
-        along.
+        along. This is a timecapsule for me to come back and review, diss myself
+        and hopefully be quite happy with how I have progressed.
       </p>
-      <h3>Timeline</h3>
+      <h3>A Brief History of Time</h3>
       <Timeline data={events} />
       <h3>Skills</h3>
-      <Skills data={skills} />
+      <Tag data={skills} />
       <h3>Interests</h3>
       <ul>
         <li>Books</li>
