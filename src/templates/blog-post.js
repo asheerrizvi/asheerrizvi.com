@@ -1,16 +1,13 @@
 import React from "react"
-import { graphql, navigate } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Suggestions from "../components/suggestions"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
-
-  const navigateToPost = slug => {
-    navigate(slug)
-  }
 
   return (
     <Layout>
@@ -22,28 +19,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         <hr />
       </article>
 
-      <nav className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {previous ? (
-          <button
-            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-lg inline-flex items-center justify-center"
-            onClick={() => navigateToPost(previous.fields.slug)}
-          >
-            {previous.frontmatter.title}
-          </button>
-        ) : (
-          <div className="hidden lg:block lg:bg-white lg:py-4 lg:px-4"></div>
-        )}
-        {next ? (
-          <button
-            className="bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-4 px-4 rounded-lg inline-flex items-center justify-center"
-            onClick={() => navigateToPost(next.fields.slug)}
-          >
-            {next.frontmatter.title}
-          </button>
-        ) : (
-          <div className="hidden lg:block lg:bg-white lg:py-4 lg:px-4"></div>
-        )}
-      </nav>
+      <Suggestions previous={previous} next={next} />
     </Layout>
   )
 }
