@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, title, pathname }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +21,7 @@ const SEO = ({ description, lang, meta, title }) => {
             social {
               twitter
             }
+            logo
           }
         }
       }
@@ -28,6 +29,8 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image = site.siteMetadata.logo
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
     <Helmet
@@ -37,6 +40,16 @@ const SEO = ({ description, lang, meta, title }) => {
       title={title}
       defaultTitle={site.siteMetadata.title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
       meta={[
         {
           name: `description`,
@@ -55,8 +68,20 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: "og:image",
+          content: image,
+        },
+        {
+          property: "og:image:width",
+          content: image.width,
+        },
+        {
+          property: "og:image:height",
+          content: image.height,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
         },
         {
           name: `twitter:creator`,
@@ -86,6 +111,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
+  pathname: PropTypes.string,
 }
 
 export default SEO
