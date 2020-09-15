@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ["./src/**/*.js"],
+  purge: {
+    mode: "all",
+    content: ["./src/**/*.js"],
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -86,5 +89,4 @@ module.exports = {
   },
   variants: {},
   // https://github.com/tailwindcss/custom-forms
-  plugins: [require("@tailwindcss/typography")],
 }
