@@ -2,6 +2,9 @@ module.exports = {
   purge: {
     mode: "all",
     content: ["./src/**/*.js"],
+    options: {
+      whitelist: ["h1", "h2", "h3", "p", "blockquote", "strong"],
+    },
   },
   theme: {
     extend: {
@@ -89,4 +92,5 @@ module.exports = {
   },
   variants: {},
   // https://github.com/tailwindcss/custom-forms
+  plugins: [require("@tailwindcss/typography")],
 }
