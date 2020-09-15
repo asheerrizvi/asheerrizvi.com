@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 code[class*="language-"],
 pre[class*="language-"] {
   text-align: left;
@@ -8,7 +9,7 @@ pre[class*="language-"] {
   color: #eee;
   background: #2f2f2f;
   font-family: Roboto Mono, monospace;
-  font-size: 1em;
+  font-size: 0.875rem;
   line-height: 1.5em;
 
   -moz-tab-size: 4;
@@ -19,6 +20,15 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+}
+
+code[class*="language-text"] {
+  font-weight: 400;
+  padding: 0.1em 0.3em !important;
+  border-radius: 0.3rem !important;
+  color: #805ad5;
+  background-color: #f8f5ff;
+  text-shadow: none;
 }
 
 code[class*="language-"]::-moz-selection,
@@ -44,8 +54,16 @@ pre[class*="language-"] ::selection {
 pre[class*="language-"] {
   overflow: auto;
   position: relative;
-  margin: 0.5em 0;
-  padding: 1.25em 1em;
+  border-radius: 0;
+  margin: 1.25rem -1rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  pre[class*="language-"] {
+    border-radius: 0.375rem;
+    margin: 1.25rem auto;
+  }
 }
 
 .language-css > code,
@@ -203,3 +221,4 @@ pre[class*="language-"] {
 .token.variable {
   color: #ff6666;
 }
+/* purgecss end ignore */
