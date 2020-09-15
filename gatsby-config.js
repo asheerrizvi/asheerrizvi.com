@@ -1,17 +1,14 @@
-const resolveConfig = require("tailwindcss/resolveConfig")
 const tailwindConfig = require("./tailwind.config.js")
-
-const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
     title: `Asheer Rizvi`,
     author: {
       name: `Asheer Rizvi`,
-      summary: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
+      summary: `Web developer and mechanical keyboards aficionado.`,
     },
     pathPrefix: `/`,
-    description: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
+    description: `Web developer and mechanical keyboards aficionado.`,
     siteUrl: `https://asheerrizvi.com/`,
     social: {
       twitter: `rizvi_asheer`,
@@ -69,7 +66,7 @@ module.exports = {
       options: {
         name: `Asheer Rizvi`,
         short_name: `Asheer Rizvi`,
-        description: `Web developer and mechanical kbd aficionado. This is my corner on the web.`,
+        description: `Web developer and mechanical keyboards aficionado.`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#805AD5`,
