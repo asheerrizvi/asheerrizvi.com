@@ -2,9 +2,6 @@ module.exports = {
   purge: {
     mode: "all",
     content: ["./src/**/*.js"],
-    options: {
-      whitelist: ["h1", "h2", "h3", "p", "blockquote", "strong"],
-    },
   },
   theme: {
     extend: {
@@ -60,13 +57,13 @@ module.exports = {
               "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important",
           },
           "pre[class*=language-]": {
-            fontSize: "1rem",
+            fontSize: "0.875rem",
             borderRadius: "0",
             margin: "1.25rem -1rem",
             padding: "1.5rem",
           },
           "code[class*=language-text]": {
-            fontSize: "1rem",
+            fontSize: "0.875rem",
             fontWeight: "400",
             padding: ".1em .3em",
             borderRadius: ".3rem",
