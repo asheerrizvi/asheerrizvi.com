@@ -470,4 +470,4 @@ I have deployed the app on Github pages, since the app was created using `create
 The public repo for this app and the deployed app itself can be found on the links below:
 
 - [Source Code](https://github.com/asheerrizvi/tic-tac-toe-montecarlo)
-- [Deployed Website](https://asheerrizvi.github.io/tic-tac-toe-montecarlo)
+- [Deployed App](https://asheerrizvi.github.io/tic-tac-toe-montecarlo)
