@@ -73,19 +73,7 @@ Here's a sample web app which uses a similar setup I described above. I have use
 </html>
 ```
 
-```css
-.container {
-    height: 100vh
-}
-
-.progress {
-    border-radius: 9999px;
-}
-
-.progress-bar {
-    border-radius: 9999px;
-}
-```
+Here is the JavaScript which is causing the progress bar to fill up and removed from the view.
 
 ```javascript
 const progress = document.querySelector(".progress");
@@ -101,6 +89,22 @@ const fillProgress = setInterval(() => {
         clearInterval(fillProgress);
     }
 }, 1000);
+```
+
+Finally, some non essential CSS.
+
+```css
+.container {
+    height: 100vh
+}
+
+.progress {
+    border-radius: 9999px;
+}
+
+.progress-bar {
+    border-radius: 9999px;
+}
 ```
 
 The folder structure looks like this:
@@ -120,7 +124,7 @@ The page will render a progress bar, fill it up to it's maximum `width` and then
 
 In order to create an observer we make use of the [MutationObserver constructor](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver). This constructor takes a `callback` function which is essentially called when a qualifying DOM change occurs. The DOM change which triggers the `callback` is described using two things:
 
-1. **The `targetNode`:** This is the DOM node which needs to be observed. This is the `progressBar` in this case.
+1. **The targetNode:** This is the DOM node which needs to be observed. This is the `progressBar` in this case.
 2. **Options for the observer:** These are simply the type of mutations which are to be observed on the `targetNode`. They can be `attributes`, `classes` and `subtree`.
 
 The complete JavaScript code for our web app will look something like this:
