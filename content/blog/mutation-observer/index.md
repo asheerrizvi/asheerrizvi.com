@@ -1,7 +1,7 @@
 ---
 foldername: mutation-observer
 date: 2020-10-03T13:12:21.942Z
-title: The MutationObserver and observing changes in the DOM
+title: MutationObserver and changes in the DOM
 ---
 This week at work I came across a tricky situation, the crux of the issue involved a Django plugin which we were using to upload files to Amazon S3. The plugin provides a template which renders a progress bar depicting the percentage of file uploaded. Once the progress bar is filled the plugin's JavaScript kicks in, it first sets the `width` of progress bar to 0% and then removes it from the DOM. The thing was that for our use case we wanted to keep that completely filled progress bar into the DOM and indicate that the file upload has completed.
 
