@@ -19,14 +19,14 @@ const Header = ({ title }) => {
         <div className="flex justify-between items-center pb-4 border-b border-gray-400">
           <div>
             <Link
-              className="text-base md:text-xl mr-4 hover:underline"
+              className="text-base md:text-xl text-gray-600 mr-4 hover:underline"
               activeClassName="underline"
               to={`/blog/`}
             >
               Blog
             </Link>
             <Link
-              className="text-base md:text-xl hover:underline"
+              className="text-base md:text-xl text-gray-600 hover:underline"
               activeClassName="underline"
               to={`/about/`}
             >
@@ -39,7 +39,7 @@ const Header = ({ title }) => {
               title="Asheer Rizvi on Github"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-4 hover:text-gray-600"
+              className="mr-4 text-gray-500 hover:text-gray-600"
             >
               <svg
                 className="fill-current w-5 h-5"
@@ -55,7 +55,7 @@ const Header = ({ title }) => {
               title="Asheer Rizvi on Twitter"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-600"
+              className="text-gray-500 hover:text-gray-600"
             >
               <svg
                 className="fill-current w-5 h-5"
