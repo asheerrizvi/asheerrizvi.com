@@ -5,7 +5,10 @@
 @tailwind utilities;
 
 h1 {
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -18,6 +21,13 @@ h3 {
 
 h4 {
   font-weight: 400;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 1.35rem 0;
 }
 
 a {
