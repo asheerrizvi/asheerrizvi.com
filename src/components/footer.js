@@ -10,7 +10,7 @@ const Footer = () => {
           title="Gatsby's official website"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="underline text-gray-600"
         >
           Gatsby
         </a>
@@ -20,7 +20,7 @@ const Footer = () => {
           title="React's official website"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="underline text-gray-600"
         >
           React
         </a>{" "}
@@ -30,7 +30,7 @@ const Footer = () => {
           title="Netlify's official website"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="underline text-gray-600"
         >
           Netlify
         </a>
@@ -42,7 +42,7 @@ const Footer = () => {
           title="Website repository on Github"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="underline text-gray-600"
         >
           Github
         </a>

@@ -20,7 +20,7 @@ const Home = ({ data }) => {
         fun at the same time. At this point I am just happy to code along every
         day.
       </p>
-      <p>
+      <p className="mb-16">
         Check out my <Link to="/blog">blog</Link>, go through the{" "}
         <Link to="/about">about</Link> section or drop an email at{" "}
         <a href="mailto:mail@asheerrizvi.com">mail@asheerrizvi.com</a>. I would
