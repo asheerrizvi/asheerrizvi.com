@@ -13,12 +13,12 @@ const Home = ({ data }) => {
       <h1>Hello! and welcome to my dysfunctional presence on Web.</h1>
       <p>
         I am a Web Developer having a particular interest in JavaScript and
-        JavaScript based stacks. This is my personal website and blog which I
-        use as a personal journal, I will probably diss my older posts as I go
-        along. Over the last couple of months I have come to discover that JS is
-        quite a "quirky" language, the realization has been humbling and quite
-        fun at the same time. At this point I am just happy to code along every
-        day.
+        JavaScript based stacks. This is my personal website and blog which I am
+        trying to use as a personal journal, I will probably diss my older posts
+        as I go along. At the moment I am working as a Web Developer for an
+        amazing early stage startup called{" "}
+        <a href="https://userfocus.app">UserFocus</a>. This has been by first
+        gig as a proper dev and I am just happy to code along each day.
       </p>
       <p className="mb-16">
         Check out my <Link to="/blog">blog</Link>, go through the{" "}
