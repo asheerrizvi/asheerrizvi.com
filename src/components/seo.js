@@ -28,6 +28,7 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  title = title || site.siteMetadata.title
 
   return (
     <Helmet
