@@ -37,8 +37,8 @@ const About = () => {
         <li>Books (high fantasy, historical fiction and non fiction)</li>
         <li>Cinema (drama and slow burns)</li>
         <li>CS GO & Video Games (CS is the greatest game of all time)</li>
-        <li>Mechanical Keyboards (RAMA Works is my favorite company)</li>
-        <li>MotoGP (Rossi is the <span role="img" aria-label="Goat">🐐</span>, Marquez is a once in a generation racer)</li>
+        <li>Mechanical Keyboards (RAMA WORKS is my favorite company)</li>
+        <li>MotoGP (Rossi is the <span role="img" aria-label="Goat">🐐</span>, Márquez is a once in a generation racer)</li>
         <li>PC Builds (liquid cooling over air cooling)</li>
         <li>Travelling (non-touristy over touristy)</li>
         <li>Photography? (not sure, doing a course though)</li>
