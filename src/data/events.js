@@ -1,49 +1,79 @@
+import React from "react"
+
 export default [
   {
-    timespan: "2018 - Present",
-    description:
-      "Currently working as a Network Engineer for HCL Technologies.",
+    timespan: "Sept 2020 - Present",
+    description: (
+      <React.Fragment>
+        Currently working as a Software Engineer at{" "}
+        <a href="https://userfocus.app">UserFocus</a>. It has been awesome! :D
+      </React.Fragment>
+    ),
+  },
+  {
+    timespan: "2018 - Sept 2020",
+    description: (
+      <React.Fragment>
+        Worked as a Network Engineer for Cisco at{" "}
+        <a href="https://hcltech.com">HCL Technologies</a>, to say it was bad
+        would be an understatement.
+      </React.Fragment>
+    ),
   },
   {
     timespan: "2018",
-    description:
-      "Left Wipro to head back home.",
+    description: "Not happy with my work, I left Wipro to return home.",
   },
   {
     timespan: "2017",
-    description:
-      "Started working as a Mainframe Engineer at Wipro Technologies.",
+    description: (
+      <React.Fragment>
+        Started working as a Mainframe Engineer at{" "}
+        <a href="https://www.wipro.com">Wipro</a>, was not happy with the track
+        they put me in.
+      </React.Fragment>
+    ),
   },
   {
     timespan: "2016",
     description:
-      "Worked as a Frontend Developer for a startup called AirCountr. They did not pay me for my work :(",
+      "Got placed in the first company which interviewed us at College placements. Felt homesick, came back home.",
+  },
+  {
+    timespan: "2016",
+    description:
+      "Worked as a Frontend Developer for a startup called AirCountr. Wasn't paid the promised stipened.",
   },
   {
     timespan: "2013 - 2017",
     description:
-      "College. Did not learn much, the curriculum wasn't that good.",
+      "Went to College, let's just say that my current skilset doesn't have anything that I learned there.",
   },
   {
     timespan: "2012",
-    description: "Completed Senior Secondary School.",
+    description: "Completed senior secondary school.",
   },
   {
     timespan: "2010",
-    description:
-      "Completed High School. Bought myself the PSP, installed a custom homebrew and quickly became bored of it.",
+    description: "Completed highschool.",
   },
   {
-    timespan: "2001 - 2009",
+    timespan: "2007",
     description:
-      "School and all the qualms that come with it. I wasn't that good of a student.",
+      "Started studying a bit more seriously, classmates were a bit surprised when I managed to have some decent results.",
   },
   {
-    timespan: "1995 - 1998",
-    description: "Mostly played Contra and Super Mario Bros.",
+    timespan: "2006",
+    description: "Almost flunked class 7th. Was a rough year as a student.",
+  },
+  {
+    timespan: "1997 - 2005",
+    description:
+      "Wasn't that good of a student, managed to progress by 'almost passing' each year.",
   },
   {
     timespan: "1993",
-    description: "Born on a cold December night.",
+    description:
+      "Born on a cold December night, winters are my favorite season but that is not because of my birthday.",
   },
 ]
