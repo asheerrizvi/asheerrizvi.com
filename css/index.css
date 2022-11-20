@@ -56,7 +56,7 @@ h6 {
 
   --background-color: #fff;
 
-  --max-width: 90rem;
+  --max-width: 48rem;
 
   --text-color: var(--color-gray-90);
   --text-color-link: #082840;
@@ -79,40 +79,40 @@ h6 {
 
 /* Fluid type scale */
 :root {
-  --step--2: clamp(0.74rem, calc(0.54rem + 1vw), 1.44rem);
-  --step--1: clamp(0.89rem, calc(0.62rem + 1.31vw), 1.8rem);
-  --step-0: clamp(1.06rem, calc(0.72rem + 1.7vw), 2.25rem);
-  --step-1: clamp(1.28rem, calc(0.84rem + 2.2vw), 2.81rem);
-  --step-2: clamp(1.53rem, calc(0.96rem + 2.84vw), 3.52rem);
-  --step-3: clamp(1.84rem, calc(1.11rem + 3.65vw), 4.39rem);
-  --step-4: clamp(2.2rem, calc(1.26rem + 4.7vw), 5.49rem);
-  --step-5: clamp(2.64rem, calc(1.44rem + 6.03vw), 6.87rem);
+  --step--2: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+  --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
+  --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 }
 
 /* Fluid spacing */
 :root {
-  --space-3xs: clamp(0.25rem, calc(0.16rem + 0.45vw), 0.56rem);
-  --space-2xs: clamp(0.56rem, calc(0.4rem + 0.8vw), 1.13rem);
-  --space-xs: clamp(0.81rem, calc(0.56rem + 1.25vw), 1.69rem);
-  --space-s: clamp(1.06rem, calc(0.72rem + 1.7vw), 2.25rem);
-  --space-m: clamp(1.63rem, calc(1.13rem + 2.5vw), 3.38rem);
-  --space-l: clamp(2.13rem, calc(1.45rem + 3.39vw), 4.5rem);
-  --space-xl: clamp(3.19rem, calc(2.17rem + 5.09vw), 6.75rem);
-  --space-2xl: clamp(4.25rem, calc(2.89rem + 6.79vw), 9rem);
-  --space-3xl: clamp(6.38rem, calc(4.34rem + 10.18vw), 13.5rem);
+  --space-3xs: clamp(0.31rem, calc(0.29rem + 0.12vw), 0.38rem);
+  --space-2xs: clamp(0.69rem, calc(0.66rem + 0.12vw), 0.75rem);
+  --space-xs: clamp(1rem, calc(0.95rem + 0.24vw), 1.13rem);
+  --space-s: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --space-m: clamp(2rem, calc(1.9rem + 0.49vw), 2.25rem);
+  --space-l: clamp(2.63rem, calc(2.48rem + 0.73vw), 3rem);
+  --space-xl: clamp(3.94rem, calc(3.72rem + 1.1vw), 4.5rem);
+  --space-2xl: clamp(5.25rem, calc(4.96rem + 1.46vw), 6rem);
+  --space-3xl: clamp(7.88rem, calc(7.44rem + 2.2vw), 9rem);
 
   /* One-up pairs */
-  --space-3xs-2xs: clamp(0.25rem, calc(0rem + 1.25vw), 1.13rem);
-  --space-2xs-xs: clamp(0.56rem, calc(0.24rem + 1.61vw), 1.69rem);
-  --space-xs-s: clamp(0.81rem, calc(0.4rem + 2.05vw), 2.25rem);
-  --space-s-m: clamp(1.06rem, calc(0.4rem + 3.3vw), 3.38rem);
-  --space-m-l: clamp(1.63rem, calc(0.8rem + 4.11vw), 4.5rem);
-  --space-l-xl: clamp(2.13rem, calc(0.8rem + 6.61vw), 6.75rem);
-  --space-xl-2xl: clamp(3.19rem, calc(1.53rem + 8.3vw), 9rem);
-  --space-2xl-3xl: clamp(4.25rem, calc(1.61rem + 13.21vw), 13.5rem);
+  --space-3xs-2xs: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
+  --space-2xs-xs: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem);
+  --space-xs-s: clamp(1rem, calc(0.8rem + 0.98vw), 1.5rem);
+  --space-s-m: clamp(1.31rem, calc(0.95rem + 1.83vw), 2.25rem);
+  --space-m-l: clamp(2rem, calc(1.61rem + 1.95vw), 3rem);
+  --space-l-xl: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.5rem);
+  --space-xl-2xl: clamp(3.94rem, calc(3.13rem + 4.02vw), 6rem);
+  --space-2xl-3xl: clamp(5.25rem, calc(3.79rem + 7.32vw), 9rem);
 
   /* Custom pairs */
-  --space-s-l: clamp(1.06rem, calc(0.08rem + 4.91vw), 4.5rem);
+  --space-s-l: clamp(1.31rem, calc(0.65rem + 3.29vw), 3rem);
 }
 
 /* Global stylesheet */
@@ -128,12 +128,15 @@ body {
 h1 {
   font-size: var(--step-5);
   font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1;
 }
 
 h2 {
   font-size: var(--step-4);
   font-weight: 700;
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-m);
+  letter-spacing: -2.5px;
 }
 
 h3 {
@@ -141,15 +144,30 @@ h3 {
   font-weight: 600;
 }
 
-p {
+h4 {
+  font-size: var(--step-2);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--step-1);
+  font-weight: 400;
+}
+
+p,
+li {
   font-size: var(--step-0);
   font-weight: 400;
   margin-bottom: var(--space-s);
 }
 
 li {
-  font-size: var(--step-0);
-  font-weight: 400;
+  margin-bottom: var(--space-xs);
+}
+
+ol,
+ul {
+  margin-bottom: var(--space-s);
 }
 
 a[href] {
@@ -168,21 +186,42 @@ a[href]:visited {
   margin: 0 auto;
 }
 
-/* Typography */
-.headline {
-  font-size: var(--step-5);
-  font-weight: 800;
-  letter-spacing: -2px;
-  line-height: 1;
-}
-
 /* Header */
 .home {
   margin: 1rem 0;
-  font-size: var(--step-1);
+  font-size: var(--step-2);
   font-weight: 800;
-  letter-spacing: -2.5px;
+  letter-spacing: -2px;
 }
 .home :link:not(:hover) {
   text-decoration: none;
+}
+
+/* Work experience */
+.work-experience {
+  margin-bottom: var(--space-m);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.work-experience:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.work-experience h3 {
+  font-size: var(--step-1);
+}
+.work-experience .company-info {
+  font-size: var(--step--1);
+}
+.work-experience p:last-of-type {
+  margin-bottom: var(--space-m);
+}
+
+/* Testimonials */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+}
+.testimonial a {
+  font-size: var(--step--1);
 }

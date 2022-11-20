@@ -44,21 +44,20 @@ eleventyNavigation:
   <div id="work-experience" class="content-container">
     <h2>Places I have worked</h2>
     {% for experience in workExperience  %}
-      <h3>
-        {{ experience.position }} - <a href={{ experience.company.website }}>{{ experience.company.name }}</a> ({{ experience.timeperiod }})
-      </h3>
-    {% for paragraph in experience.description %}
-      <p>
-        {{ paragraph }}
-      </p>
-    {% endfor %}
+    <div class="work-experience">
+      <h3>{{ experience.position }}</h3>
+      <p class="company-info"><a href={{ experience.company.website }}>{{ experience.company.name }}</a> ({{ experience.timeperiod }})</p>
+      {% for paragraph in experience.description %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
     {% endfor %}
   </div>
 </section>
 
 <section class="slice">
   <div id="education" class="content-container">
-    <h2>Courses I have done</h2>
+    <h2>What I have studied</h2>
     <p>Bachelor's Degree in <strong>Computer Science and Engineering.</strong></p>
   </div>
 </section>
@@ -66,12 +65,14 @@ eleventyNavigation:
 <section class="slice">
   <div id="testimonials" class="content-container">
     <h2>What my colleagues say</h2>
-    {% for testimonial in testimonials %}
-    {% for paragraph in testimonial.description %}
-      <p>{{ paragraph | safe }}</p>
-    {% endfor %}
-      <a href={{ testimonial.author.profile }}>{{ testimonial.author.name }}</a>
-    {% endfor %}
+    <div class="testimonials">
+      {% for testimonial in testimonials %}
+      <div class="testimonial">
+        <p>{{ testimonial.summary | safe }}</p>
+        <a href={{ testimonial.author.profile }}>{{ testimonial.author.name }}</a>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
