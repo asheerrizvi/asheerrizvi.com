@@ -4,11 +4,87 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<section class="slice">
+  <div id="headline" class="content-container">
+    <h1 class="headline">Hi! I'm a front-end developer, I make web user interfaces and make them look noice.</h1>
+  </div>
+</section>
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<section class="slice">
+  <div id="introduction" class="content-container">
+    <h2>Hello, my name is Asheer.</h2>
+    <p>
+      I am a design-focused front-end developer based in India. I create web interfaces with focus on responsive design, accessibility, semantic markup, and performance. I have a Bachelor’s Degree in Computer Science and Engineering and have been building web user interfaces, design systems, and digital products since 2017.
+    </p>
+    <p>
+      I am currently working as a front-end developer at Biconomy, a company trying to make blockchain applications on par with traditional applications. I hold high standards for the work that I do, and I ensure that it is:
+    </p>
+    <ul>
+      <li>Optimized for mobile</li>
+      <li>Fully responsive</li>
+      <li>Cross browser compatible</li>
+      <li>Accessible</li>
+      <li>Standards compliant</li>
+      <li>Performant</li>
+      <li>Well documented and tested</li>
+      <li>Follows the latest practices</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slice">
+  <div id="skills" class="content-container">
+    <h2>Things I have done</h2>
+    {% renderFile "./skills/index.md" %}
+  </div>
+</section>
+
+<section class="slice">
+  <div id="work-experience" class="content-container">
+    <h2>Places I have worked</h2>
+    {% for experience in workExperience  %}
+      <h3>
+        {{ experience.position }} - <a href={{ experience.company.website }}>{{ experience.company.name }}</a> ({{ experience.timeperiod }})
+      </h3>
+    {% for paragraph in experience.description %}
+      <p>
+        {{ paragraph }}
+      </p>
+    {% endfor %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="slice">
+  <div id="education" class="content-container">
+    <h2>Courses I have done</h2>
+    <p>Bachelor's Degree in <strong>Computer Science and Engineering.</strong></p>
+  </div>
+</section>
+
+<section class="slice">
+  <div id="testimonials" class="content-container">
+    <h2>What my colleagues say</h2>
+    {% for testimonial in testimonials %}
+    {% for paragraph in testimonial.description %}
+      <p>{{ paragraph | safe }}</p>
+    {% endfor %}
+      <a href={{ testimonial.author.profile }}>{{ testimonial.author.name }}</a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="slice">
+  <div id="interests" class="content-container">
+    <h2>Interests</h2>
+    <ol>
+      <li>Video Games (PC over consoles)</li>
+      <li>Reading (high fantasy and historical fiction)</li>
+      <li>MotoGP (Rossi is the 🐐)</li>
+      <li>F1 (the politics is spicy)</li>
+      <li>Walking (especially in winter)</li>
+      <li>Food (my city is well-known for its cuisines)</li>
+    </ol>
+  </div>
+</section>
