@@ -137,6 +137,7 @@ h2 {
   font-weight: 700;
   margin-bottom: var(--space-m);
   letter-spacing: -2.5px;
+  line-height: 1.5;
 }
 
 h3 {
@@ -188,13 +189,30 @@ a[href]:visited {
 
 /* Header */
 .home {
-  margin: 1rem 0;
+  margin: 4rem 0 1rem;
   font-size: var(--step-2);
   font-weight: 800;
   letter-spacing: -2px;
 }
 .home :link:not(:hover) {
   text-decoration: none;
+}
+
+.headline {
+  background: linear-gradient(
+    90deg,
+    #12c2e9,
+    #0dbef0,
+    #42b3fd,
+    #8e9cfb,
+    #d17ad8,
+    #f45a9f,
+    #f94f6d,
+    #f64f59
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Work experience */
