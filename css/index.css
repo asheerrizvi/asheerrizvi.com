@@ -56,6 +56,18 @@ h6 {
 
   --background-color: #fff;
 
+  --headline-gradient: radial-gradient(
+    circle at -20% 50%,
+    #009fff,
+    #3d9aff,
+    #7c8bf8,
+    #b571df,
+    #dd51b4,
+    #ef3582,
+    #ef2d5a,
+    #ec2f4b
+  );
+  --link-color: #ec2f4b;
   --max-width: 48rem;
 
   --text-color: var(--color-gray-90);
@@ -172,10 +184,14 @@ ul {
 }
 
 a[href] {
-  color: var(--text-color-link);
+  color: currentColor;
+  text-decoration-color: var(--link-color);
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.07em;
+  transition: color 0.25s ease, text-decoration-color 0.25s ease;
 }
-a[href]:visited {
-  color: var(--text-color-link-visited);
+a[href]:hover {
+  color: var(--link-color);
 }
 
 /* Layout */
@@ -190,26 +206,19 @@ a[href]:visited {
 /* Header */
 .home {
   margin: 4rem 0 1rem;
+}
+.home a {
   font-size: var(--step-2);
   font-weight: 800;
   letter-spacing: -2px;
+  text-decoration-color: var(--background-color);
 }
-.home :link:not(:hover) {
-  text-decoration: none;
+.home a:hover {
+  text-decoration-color: var(--link-color);
 }
 
 .headline {
-  background: linear-gradient(
-    90deg,
-    #12c2e9,
-    #0dbef0,
-    #42b3fd,
-    #8e9cfb,
-    #d17ad8,
-    #f45a9f,
-    #f94f6d,
-    #f64f59
-  );
+  background: var(--headline-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
