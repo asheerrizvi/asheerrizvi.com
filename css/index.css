@@ -50,11 +50,12 @@ h6 {
 
 /* Theme colors */
 :root {
-  --color-gray-20: #e0e0e0;
-  --color-gray-50: #c0c0c0;
-  --color-gray-90: #333;
+  --color-gray-20: #e9ecef;
+  --color-gray-50: #adb5bd;
+  --color-gray-90: #212529;
 
   --background-color: #fff;
+  --border-color: var(--color-gray-20);
 
   --headline-gradient: radial-gradient(
     circle at -20% 50%,
@@ -72,20 +73,18 @@ h6 {
 
   --text-color: var(--color-gray-90);
   --text-color-link: #082840;
-  --text-color-link-visited: #17050f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-gray-20: #e0e0e0;
-    --color-gray-50: #c0c0c0;
-    --color-gray-90: #dad8d8;
+    --color-gray-20: #e9ecef;
+    --color-gray-50: #adb5bd;
+    --color-gray-90: #dee2e6;
+
+    --background-color: #212529;
+    --border-color: #495057;
 
     /* --text-color is assigned to --color-gray-_ above */
-    --text-color-link: #1493fb;
-    --text-color-link-visited: #a6a6f8;
-
-    --background-color: #15202b;
   }
 }
 
@@ -205,7 +204,7 @@ a[href]:hover {
 
 /* Header */
 .home {
-  margin: 4rem 0 1rem;
+  margin: 2rem 0;
 }
 .home a {
   font-size: var(--step-2);
@@ -227,7 +226,7 @@ a[href]:hover {
 /* Work experience */
 .work-experience {
   margin-bottom: var(--space-m);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border-color);
 }
 .work-experience:last-child {
   margin-bottom: 0;
