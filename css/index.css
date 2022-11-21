@@ -194,22 +194,25 @@ a[href]:hover {
 }
 
 /* Layout */
-.slice {
-  padding: var(--space-m) 0;
-}
 .content-container {
   width: min(90vw, var(--max-width));
   margin: 0 auto;
+  padding: var(--space-m) 0;
+}
+header .content-container,
+#headline .content-container {
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Header */
 .home {
-  margin: 2rem 0;
-}
-.home a {
+  padding: 1rem 0 1rem;
   font-size: var(--step-2);
   font-weight: 800;
   letter-spacing: -2px;
+  line-height: 1;
+}
+.home a {
   text-decoration-color: var(--background-color);
 }
 .home a:hover {
@@ -221,6 +224,19 @@ a[href]:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Nav */
+.nav {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.nav-item {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  font-size: var(--step--2);
 }
 
 /* Work experience */
@@ -247,6 +263,7 @@ a[href]:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 4rem;
+  margin-bottom: var(--space-s);
 }
 .testimonial a {
   font-size: var(--step--1);
