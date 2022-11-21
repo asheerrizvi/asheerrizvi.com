@@ -7,9 +7,9 @@
     },
     "timeperiod": "Dec 2021 - Present",
     "description": [
-      "Biconomy’s aim is to make Web3 frictionless, mainstream and accessible.",
-      "At Biconomy I work on Hyphen. Hyphen consists of a cross chain bridge, liquidity pools and farms. It helps the Web3 community transfer tokens between blockchains, provide liquidity and stake their provided liquidity over a period of time.",
-      "I work to make decentralised applications on par with standard web applications and bringing better UI/UX to Web3 applications."
+      "Biconomy’s aim is to make Web3 frictionless, mainstream, and accessible.",
+      "At Biconomy, I work on Hyphen. Hyphen consists of a cross chain bridge, liquidity pools, and farms. It helps the Web3 community transfer tokens between blockchains, provide liquidity, and stake their provided liquidity over a period of time.",
+      "I work to make decentralised applications on par with standard web applications and bring better UI/UX to Web3 applications."
     ]
   },
   {
@@ -20,9 +20,9 @@
     },
     "timeperiod": "Sept 2020 - Dec 2021",
     "description": [
-      "Marvin is a tool for user interviews and makes the process of conducting, organising and analysing those interviews a breeze.",
-      "Joined as the team’s first engineer and worked on their frontend stack from the ground up. Worked with the CPO and co-founders to build the first prototype which would eventually transition into the final product. My contributions helped the company acquire deals worth ~$255K pre launch.",
-      "Refactored dated JavaScript code to a modern and more modular codebase. Later introduced React into the workflow while making “pixel-perfect”, accessible and beautiful user experiences throughout the application."
+      "Marvin is a tool for user interviews and makes the process of conducting, organizing, and analysing those interviews a breeze.",
+      "I joined as the team’s first engineer and worked on their front-end stack from the ground up. I worked with the CPO and co-founders to build the first prototype, which would eventually transition into the final product. My contributions helped the company acquire deals worth ~$255K before launch.",
+      "Refactored out-of-date JavaScript code into a more modern, modular codebase. Later, we introduced React into the workflow while making pixel-perfect, accessible, and beautiful user experiences throughout the application."
     ]
   },
   {
@@ -33,7 +33,7 @@
     },
     "timeperiod": "May 2018 - Sept 2020",
     "description": [
-      "Worked as a network engineer for Cisco Managed Services. The profile entailed providing support to over 70 clients and cut across platforms such as Linux, EM7, ServiceNow and Splunk."
+      "I worked as a network engineer for Cisco Managed Services. The profile entailed providing support to over 70 clients and cut across platforms such as Linux, EM7, ServiceNow, and Splunk."
     ]
   },
   {
@@ -44,7 +44,7 @@
     },
     "timeperiod": "Aug 2017 - May 2018",
     "description": [
-      "Worked as a mainframe engineer for Credit Suisse. The role mainly involved working with COBOL, JCL, IBM DB2, VSAM and CICS."
+      "I worked as a mainframe engineer for Credit Suisse. The role mainly involved working with COBOL, JCL, IBM DB2, VSAM, and CICS."
     ]
   }
 ]
