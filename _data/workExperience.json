@@ -7,9 +7,9 @@
     },
     "timeperiod": "Dec 2021 - Present",
     "description": [
-      "Biconomy’s aim is to make Web3 frictionless, mainstream, and accessible.",
-      "At Biconomy, I work on Hyphen. Hyphen consists of a cross chain bridge, liquidity pools, and farms. It helps the Web3 community transfer tokens between blockchains, provide liquidity, and stake their provided liquidity over a period of time.",
-      "I work to make decentralised applications on par with standard web applications and bring better UI/UX to Web3 applications."
+      "Front-end developer working on Hyphen and Biconomy’s new SDK.",
+      "Initially, I was working on Hyphen’s front-end. Currently, I am leading the efforts to re-build our front-ends using React, Next.js, CSS Modules, Jest, the React Testing Library, Cypress, etc.",
+      "Helped the team develop a robust front-end stack with a focus on scalability, performance, web standards, and testing."
     ]
   },
   {
@@ -20,9 +20,9 @@
     },
     "timeperiod": "Sept 2020 - Dec 2021",
     "description": [
-      "Marvin is a tool for user interviews and makes the process of conducting, organizing, and analysing those interviews a breeze.",
-      "I joined as the team’s first engineer and worked on their front-end stack from the ground up. I worked with the CPO and co-founders to build the first prototype, which would eventually transition into the final product. My contributions helped the company acquire deals worth ~$255K before launch.",
-      "Refactored out-of-date JavaScript code into a more modern, modular codebase. Later, we introduced React into the workflow while making pixel-perfect, accessible, and beautiful user experiences throughout the application."
+      "I joined as the company’s first front-end developer and worked on the front-end stack from the ground up.",
+      "For interactivity, the initial product prototype was built with jQuery; we refactored that initial code to use Vanilla JavaScript.",
+      "Later, we introduced React, Next.js, styled-components, Jest, Cypress, etc. helped the team transition from a monolith to a modern, modular codebase."
     ]
   },
   {

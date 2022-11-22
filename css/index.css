@@ -180,6 +180,7 @@ li {
 ol,
 ul {
   margin-bottom: var(--space-s);
+  padding-inline-start: 32px;
 }
 
 a[href] {
