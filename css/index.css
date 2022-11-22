@@ -259,13 +259,13 @@ header .content-container,
   margin-bottom: var(--space-m);
 }
 
-/* Testimonials */
-.testimonials {
+/* References */
+.references {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 4rem;
   margin-bottom: var(--space-s);
 }
-.testimonial a {
+.reference a {
   font-size: var(--step--1);
 }

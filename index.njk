@@ -64,14 +64,14 @@ title: Asheer Rizvi - Home
   </div>
 </section>
 
-<section id="testimonials" class="slice">
+<section id="references" class="slice">
   <div class="content-container">
-    <h2>Testimonials</h2>
-    <div class="testimonials">
-      {% for testimonial in testimonials %}
-      <div class="testimonial">
-        <p>{{ testimonial.summary | safe }}</p>
-        <a href={{ testimonial.author.profile }}>{{ testimonial.author.name }}</a>
+    <h2>References</h2>
+    <div class="references">
+      {% for reference in references %}
+      <div class="reference">
+        <p>{{ reference.summary | safe }}</p>
+        <a href={{ reference.author.profile }}>{{ reference.author.name }}</a>
       </div>
       {% endfor %}
     </div>
