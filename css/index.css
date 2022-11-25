@@ -41,11 +41,8 @@ h6 {
 
 /* Defaults */
 :root {
-  --font-family: -apple-system, system-ui, sans-serif;
-  --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-    Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-    Courier, monospace;
+  --font-family-paragraph: "Inter", sans-serif;
+  --font-family-heading: "Inter Tight", sans-serif;
 }
 
 /* Theme colors */
@@ -131,15 +128,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-family);
+  font-family: var(--font-family-paragraph);
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+:where(h1, h2, h3, .home) {
+  font-family: var(--font-family-heading);
 }
 
 h1 {
   font-size: var(--step-5);
   font-weight: 800;
-  letter-spacing: -2px;
   line-height: 1;
 }
 
@@ -147,23 +147,12 @@ h2 {
   font-size: var(--step-4);
   font-weight: 700;
   margin-bottom: var(--space-m);
-  letter-spacing: -2.5px;
   line-height: 1;
 }
 
 h3 {
   font-size: var(--step-3);
   font-weight: 600;
-}
-
-h4 {
-  font-size: var(--step-2);
-  font-weight: 500;
-}
-
-h5 {
-  font-size: var(--step-1);
-  font-weight: 400;
 }
 
 p,
@@ -208,9 +197,9 @@ header .content-container,
 /* Header */
 .home {
   padding: 1rem 0 1rem;
+  font-family: var(--font-family-heading);
   font-size: var(--step-2);
   font-weight: 800;
-  letter-spacing: -2px;
   line-height: 1;
 }
 .home a {
